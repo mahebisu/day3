@@ -1,0 +1,348 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+
+/* 背景 */
+.body{
+    background: url(../img/saunner_logo.jpg);
+    background-size: 6%;
+    background-repeat: repeat;
+}
+
+
+/* title */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    max-width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #003580;
+    border-radius: 40px;
+
+}
+
+.title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Noto Serif JP', serif;
+
+}
+
+/* 住所入力画面 */
+
+.nyuryoku{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    max-width: 100%;
+    height: 90px;
+    background-color: #003580;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+
+}
+
+.nyuryoku dl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+
+.nyuryoku dl dd{
+    width: 200px;
+    max-width: 16.6%;
+    color: #ffffff;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 30px;
+}
+
+.nyuryoku dl dd h2{
+padding: 0 0 0 30px;
+}
+
+
+.naka{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 780px;
+    max-width: 58.3%;
+    font-size: 18px;
+}
+
+.naka input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 760px;
+    max-width: 97.4%;
+    height: 30px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg);
+    border-radius: 0;
+    background-image: -webkit-linear-gradient(left, #2af598 0%, #009efd 100%);
+    background-image: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+    margin: 0 auto;
+
+}
+
+
+.btn-gradient{
+    width: 180px;
+
+    font-family: 'Noto Serif JP', serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+  }
+ 
+  
+.btn-gradient:hover {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+    color: #fff;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  }
+
+/* どれにしようかな */
+.doreni_ul{
+    width: 1200px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.doreni_pic{
+    width: 382px;
+    max-width: 33%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border: solid 6px #003580;
+    box-sizing: border-box;
+    margin: 0px auto 20px;
+
+
+}
+
+.doreni_text{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 
+            2px  2px 1px #003580,
+        -2px  2px 1px #003580,
+            2px -2px 1px #003580,
+        -2px -2px 1px #003580,
+            2px  0px 1px #003580,
+            0px  2px 1px #003580,
+        -2px  0px 1px #003580,
+            0px -2px 1px #003580;        /* 文字の影 */
+    text-align: center;
+    margin: 85px auto 0;
+}
+
+.doreni_kaisu{
+    width: 350px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #003580;
+    border: solid 2px #ffffff;
+    align-items: center;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 90px auto;
+}
+
+.doreni_kaisu_num{
+    width: 100px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.pic1{
+    background: url(../img/mitsukoshiyu1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.pic2{
+    background: url(../img/hokuou1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.pic3{
+    background: url(../img/yoshinoyu1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.pic4{
+    background: url(../img/karumaru1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.pic5{
+    background: url(../img/koganeyu1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.pic6{
+    background: url(../img/adamive1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* 履歴 */
+.rireki{
+    width: 800px;
+    margin: 20px auto;
+    background-color: #003580;
+
+}
+
+.rireki p{
+    width: 800px;
+    height: 40px;
+    align-items: center;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+.rireki dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rireki_subtitle dt,.rireki_subtitle dd{
+    width: 396px;
+    height: 30px;
+    border: solid 2px #ffffff;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.rireki_add{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.rireki_add dd,.rireki_add dt{
+    width: 396px;
+    height: 30px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    color: #003580;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    border: solid 2px #003580;
+
+
+}
+
+
+/* 結果表示 */
+
+.kekka_one{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    
+}
+
+.kekka_sand{
+    margin: 20px auto;
+    background-color: #003580;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 30px;
+    width: 600px;
+    max-width: 100%;
+
+    height: 50px;
+    padding: 10px 0 0;
+}
+
+.doreni_pic2{
+    width: 600px;
+    max-width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 6px #003580;
+    margin: 0 auto 20px;
+
+}
+
+.kekka_a{
+    text-decoration: none;
+}
+
+.mapbtn:hover{
+    background-color: #fff;
+    font-weight: bolder;
+    border-color: #003580;
+    color: #003580;
+
+}
+
+
+/* footer */
+
+.footer{
+    text-align: center;
+    margin: 80px;
+}
