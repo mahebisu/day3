@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日はどこのサウナいく？</title>
+    <!-- jqueryを読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Noto fontをダウンロード -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <header class="title">
+        <h1>今日はどこのサウナに行きますか</h1>
+    </header>
+
+    <!-- 住所入力画面 -->
+    <section class="nyuryoku" id="nyuryoku_id">
+
+        <form action="#" method="post" class="nyuryoku_form">
+            <dl class="nyuryoku_waku">
+                <dd><h2>いまどこ？</h2></dd>
+                <dt class="naka"><input type="text" name="name" id="naka" placeholder="いまいるばしょを入力" style="font-size:20px;"></dt>
+                <div class="btn" id="btn_id"><p class="btn-gradient">れっつらご</p></div>
+            </dl>
+        </form>
+
+    </section>
+
+    <section class="doreni_all" id="doreni_id">
+
+        <ul class="doreni_ul">
+            <li class="doreni_pic pic1">
+                <p class="doreni_text">三越湯</p>
+                <dl class="doreni_kaisu">
+                    <dt>今まで</dt>
+                    <dd class="doreni_kaisu_num num0">0</dd>
+                    <dd>回 活動</dd>
+                </dl>
+            </li>
+            <li class="doreni_pic pic2">
+                <p class="doreni_text">北欧</p>
+                <dl class="doreni_kaisu">
+                    <dt>今まで</dt>
+                    <dd class="doreni_kaisu_num">0</dd>
+                    <dd>回 活動</dd>
+                </dl>
+            </li>
+            <li class="doreni_pic pic3">
+                <p class="doreni_text">吉の湯</p>
+                <dl class="doreni_kaisu">
+                    <dt>今まで</dt>
+                    <dd class="doreni_kaisu_num">0</dd>
+                    <dd>回 活動</dd>
+                </dl>
+            </li>
+            <li class="doreni_pic pic4">
+                <p class="doreni_text">かるまる</p>
+                <dl class="doreni_kaisu">
+                    <dt>今まで</dt>
+                    <dd class="doreni_kaisu_num">0</dd>
+                    <dd>回 活動</dd>
+                </dl>
+            </li>
+            <li class="doreni_pic pic5">
+                <p class="doreni_text">黄金湯</p>
+                <dl class="doreni_kaisu">
+                    <dt>今まで</dt>
+                    <dd class="doreni_kaisu_num">0</dd>
+                    <dd>回 活動</dd>
+                </dl>
+            </li>
+            <li class="doreni_pic pic6">
+                <p class="doreni_text">アダム&イブ</p>
+                <dl class="doreni_kaisu">
+                    <dt>今まで</dt>
+                    <dd class="doreni_kaisu_num">0</dd>
+                    <dd>回 活動</dd>
+                </dl>
+            </li>
+        </ul>
+        
+    </section>
+
+<!-- 今まで行った履歴を並べよう -->
+    <section class="rireki" id="rireki">
+        <p class="rireki_title">これまでのサ活</p>
+
+        <dl class="rireki_subtitle">
+            <dt>いった日</dt>
+            <dd>ばしょ</dd>
+        </dl>
+        <dl class="rireki_add">
+
+        </dl>
+    </section>
+
+
+<!-- 結果はここから -->
+    <section class="kekka_all">
+
+        <div class="kekka_one kekka1">
+            <h2 class="kekka_sand">今日のサウナ</h2>
+            <div class="doreni_pic2 pic1"><p class="doreni_text">三越湯</p></div>
+            <a href="" target=”_blank” class="kekka_a"><h2 class="kekka_sand mapbtn" >Googlemapsで行く</h2></a>
+        </div>
+        <div class="kekka_one kekka2">
+            <h2 class="kekka_sand">今日のサウナ</h2>
+            <div class="doreni_pic2 pic2"><p class="doreni_text">北欧</p></div>
+            <a href="" target=”_blank” class="kekka_a"><h2 class="kekka_sand mapbtn" >Googlemapsで行く</h2></a>
+        </div>
+        <div class="kekka_one kekka3">
+            <h2 class="kekka_sand">今日のサウナ</h2>
+            <div class="doreni_pic2 pic3"><p class="doreni_text">吉の湯</p></div>
+            <a href="" target=”_blank” class="kekka_a"><h2 class="kekka_sand mapbtn" >Googlemapsで行く</h2></a>
+        </div>
+        <div class="kekka_one kekka4">
+            <h2 class="kekka_sand">今日のサウナ</h2>
+            <div class="doreni_pic2 pic4"><p class="doreni_text">かるまる</p></div>
+            <a href="" target=”_blank” class="kekka_a"><h2 class="kekka_sand mapbtn" >Googlemapsで行く</h2></a>
+        </div>
+        <div class="kekka_one kekka5">
+            <h2 class="kekka_sand">今日のサウナ</h2>
+            <div class="doreni_pic2 pic5"><p class="doreni_text">黄金湯</p></div>
+            <a href="" target=”_blank” class="kekka_a"><h2 class="kekka_sand mapbtn" >Googlemapsで行く</h2></a>
+        </div>
+        <div class="kekka_one kekka6">
+            <h2 class="kekka_sand">今日のサウナ</h2>
+            <div class="doreni_pic2 pic6"><p class="doreni_text">アダム&イブ</p></div>
+            <a href="" target=”_blank” class="kekka_a"><h2 class="kekka_sand mapbtn" >Googlemapsで行く</h2></a>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <small>copyrights 2021 kyodokosauna ltd All RIghts Reserved.</small>
+    </footer>
+
+
+    <!--** 以下Firebase **-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- 6.6.1に該当する箇所はfirebaseのバージョンですので更新されるたびに随時変わります🤗 -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase.js"></script> <!-- -appは削除、最新version（9.0.1）にしたら動かなかった-->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+        apiKey: "AIzaSyDbu0mZy0QYXRVwWvNkWo9wiCXSxC5-w34",
+        authDomain: "dev21chat-158eb.firebaseapp.com",
+        databaseURL: "https://dev21chat-158eb-default-rtdb.firebaseio.com/", //自動で作られないのでコピーして追加
+        projectId: "dev21chat-158eb",
+        storageBucket: "dev21chat-158eb.appspot.com",
+        messagingSenderId: "734331060482",
+        appId: "1:734331060482:web:2968cc8363d4cd2766021b"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        //firebaseのデーターベース（保存させる場所）を使いますよ
+        const newPostRef = firebase.database().ref();
+
+        // ここから下にjqueryの処理を書いて練習します
+
+    </script>
+
+    <!-- webページが表示されるのを早くするために、一番最後にjavascriptを起動させる。 -->
+    <script src="js/janken.js"></script> 
+
+</body>
+</html>
